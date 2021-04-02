@@ -119,7 +119,7 @@
                                         <td><div class="tb-center">${reviewVO.review_seq}</div></td>
                                         <td><div class="tb-left"><img src="resources/images/icons/neo_lock.gif"></div></td>
                                        	<td><div class="tb-left"><img src="${product.prod_title_image}" width="60" height="60" align="middle"></div></td> 
-                                        <td><div class="tb-left"><a href='<c:url value='/reviewContent.do?review_seq=${reviewVO.review_seq}'/>'class="text-dark">[${product.prod_title}]${reviewVO.review_title}[}]</a></div>
+                                        <td><div class="tb-left"><a href='<c:url value='/reviewContent.do?review_seq=${reviewVO.review_seq}'/>'class="text-dark">[${product.prod_title}]${reviewVO.review_title}[]</a></div>
                                         </td>
                                         <td>
                                           <div class="tb-center"> <c:if test="${reviewVO.review_writer ne null && reviewVO.review_writer!=''}">${fn:substring(reviewVO.review_writer,0,fn:length(reviewVO.review_writer)-1)}*</c:if></div>

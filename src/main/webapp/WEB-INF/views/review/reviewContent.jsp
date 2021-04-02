@@ -130,6 +130,7 @@ function submitForm()
 				
 				
 				<!-- .page-body -->
+				<c:if test="${login_state eq 'login' }">
 				<form id="comment_form" name="comment" action="insertReviewReply.do" method="post">
 				<input type="hidden" name="review_seq" class="MS_input_txt input-style input-style2" value="${reviewVO.review_seq }">
 					<fieldset>
@@ -160,6 +161,7 @@ function submitForm()
 						</table>
 					</fieldset>
 				</form>
+				</c:if>
 			</div>
 			<!-- #bbsData -->
 		</div>
